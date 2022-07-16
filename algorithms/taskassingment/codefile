@@ -1,0 +1,12 @@
+# Efficiency O(nlogn) time and O(n) space
+
+def taskAssignment(k, tasks):
+    tasks = list(zip(tasks, range(0, len(tasks)))) 
+    print(tasks)
+    tasks = sorted(tasks, key=lambda x: x[0])       # nlogn  # zip with index sort by second value
+    assignment = []
+    for i in range(0, int(len(tasks)/2)):
+        print(i)
+        assignment = assignment + [[tasks[i][1], tasks[len(tasks) - 1 - i][1]]]
+
+    return assignment
