@@ -1,1 +1,26 @@
+River Size Algorithm explained verbally:
 
+
+The river size algorithm takes a matrix that contains only 1s and 0s as input. 1 signifies a river and 0 signifies land. 
+The algorithm returns an array that contains lengths of the rivers. A river is formed by all the 1s that are connected to each other horizontally or vertically.
+So, a river can have any shape, it could be an L shape or a square of 1s.
+
+[
+  [1, 0, 0, 1, 0],
+  [1, 0, 1r, 0, 0],
+  [0, 0, 1r, 0, 1],
+  [1, 0, 1r, 0, 1],
+  [1, 0, 1r, 1r, 0]
+]
+Here the longest river is five 1s long.
+or 
+
+[
+  [1, 0, 0, 1r, 0],
+  [1, 0, 1r, 1r, 0],
+  [0, 0, 1r, 1r, 1r],
+  [1, 0, 1r, 1r, 1r],
+  [1, 0, 1r, 0, 0]
+]
+
+Here the longest river is ten 1s long.
