@@ -3,7 +3,7 @@
 def taskAssignment(k, tasks):
     tasks = list(zip(tasks, range(0, len(tasks)))) 
     print(tasks)
-    tasks = sorted(tasks, key=lambda x: x[0])       # nlogn  # zip with index sort by second value
+    tasks = sorted(tasks, key=lambda x: x[0])       # nlogn  
     assignment = []
     for i in range(0, int(len(tasks)/2)):
         print(i)
