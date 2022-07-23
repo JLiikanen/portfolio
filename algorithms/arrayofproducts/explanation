@@ -1,0 +1,10 @@
+
+The function @arrayOfProducts (See codefile) takes a non-empty array of integers as input,
+and replaces each element with a product of all the other elements except of the current index we are at. In the solution it was forbidden to use division.
+
+For example,
+
+Input = [5, 4, 3, 2]
+
+Output = [(4 * 3 * 2 - Doesn't take the first element into consideration), (5 * 3 * 2), (4 * 5 * 2), (4 * 5 * 3)]
+
