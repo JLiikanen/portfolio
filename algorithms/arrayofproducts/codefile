@@ -1,0 +1,25 @@
+
+def arrayOfProducts(array):
+    leftProduct = 1 # the product of the items on the left of the current index - so we don't need to calculate it everytime
+    rightSideStartsAt = 0
+    resArray = []
+    while rightSideStartsAt < len(array):
+        # right loop
+        rightProduct = 1
+        iRight = rightSideStartsAt
+        while iRight < len(array)-1: # calculating the product on the right side of the index
+            iRight += 1
+            print(array[iRight])
+            rightProduct = rightProduct * array[iRight]
+
+        # left side
+        if rightSideStartsAt == 0:
+            resArray.append(rightProduct)
+            rightSideStartsAt += 1
+            continue
+        else:
+            leftProduct = leftProduct * array[rightSideStartsAt-1]
+            rightSideStartsAt += 1
+            resArray.append(rightProduct * leftProduct)
+
+    return resArray
