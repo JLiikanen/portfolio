@@ -1,6 +1,6 @@
 # portfolio
 
-Portfolio sisältää muutamia esimerkkejä koodaustöistäni.
+Portfolio sisältää muutamia koodaamiani algoritmeja sekä pelejä.
 
 Blackjack peli - https://github.com/JLiikanen/BlackJack_Game 
 
