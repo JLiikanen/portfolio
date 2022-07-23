@@ -1,5 +1,7 @@
 # portfolio
 
+Portfolio sisältää muutamia esimerkkejä koodaustöistäni.
+
 Blackjack peli - https://github.com/JLiikanen/BlackJack_Game 
 
 Tekstipeli - https://github.com/JLiikanen/testi 
